@@ -1,0 +1,117 @@
+body{
+	background-color:beige;
+	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+}
+
+a{
+	color: red;
+	font-size: 20px;
+}
+
+.scrolltop-button{
+	position:fixed;
+	right:15px;
+	bottom:15px;
+	transition-duration: 0.4s;
+	z-index:1;
+}
+
+.scrolltop-button:hover{
+	opacity:0.6;
+	cursor:pointer;
+}
+
+h1{
+	font-weight: 900;
+}
+
+hr{
+	background-color:black;
+	height: 2px;
+}
+
+.rounded-circle{
+	width: 45%;
+}
+
+.bio img{
+	transition: transform .3s;
+}
+
+.bio img:hover{
+	cursor:pointer;
+	transform: scale(1.5);
+}
+
+.accomplishments{
+	margin-left:5%;
+}
+
+.yr_acm{
+	border-left: 5px solid red;
+}
+
+
+.contact img{
+	width:8%;
+}
+
+.contact img:hover{
+	opacity: 0.5;
+}
+
+
+.contact span{
+	margin-left:5px;
+}
+
+.second_version img{
+	width:25%;
+}
+
+.mail, .wa{
+	margin-right:10px;
+}
+
+@media screen and (max-width:769px){
+	.logo{
+		width:50%;
+		height: 50%;
+	}
+	
+	.credit img{
+		width:60%;
+	}
+	
+	.contact span{
+		display:none;
+	}
+	
+	.first_version{
+		display:none;
+	}
+	
+}
+
+@media screen and (min-width:770px){
+	.second_version{
+		display:none;
+	}
+}
+
+@media screen and (max-width:560px){
+	.second_version img{
+		width:35%;
+	}
+}
+
+@media screen and (max-width:993px){
+	.rounded-circle{
+		width: 35%;
+	}
+	
+	.summary{
+		right: 20%;
+		left: 20%;
+	}
+}

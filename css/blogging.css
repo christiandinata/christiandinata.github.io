@@ -1,0 +1,149 @@
+body{
+	background-color:beige;
+	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+}
+
+a{
+	color: red;
+	font-size:20px;
+}
+
+.scrolltop-button{
+	position:fixed;
+	right:15px;
+	bottom:15px;
+	transition-duration: 0.4s;
+	z-index:1;
+}
+
+.scrolltop-button:hover{
+	opacity:0.6;
+	cursor:pointer;
+}
+
+h1{
+	font-weight: 900;
+}
+
+hr{
+	height: 2px;
+	background-color:black;
+}
+
+h2.solid{
+	border-style:none solid;
+}
+
+table, th, td {
+  	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+.rounded-circle{
+	border-radius:45%;
+}
+
+.story{
+	margin-left:7%;
+}
+
+.d-flex .author{
+	margin-right:5px;
+}
+
+span.read_more_button{
+	color:#CD8934;
+	padding:0 10px;
+	border: solid #FFA300;
+	cursor:pointer;
+	transition-duration: 0.4s;
+}
+
+span.read_more_button:hover{
+	background-color:navajowhite;
+}
+
+span.read_less_button{
+	color:#CD8934;
+	padding:0 10px;
+	border: solid #FFA300;
+	cursor:pointer;
+	transition-duration: 0.4s;
+}
+
+span.read_less_button:hover{
+	background-color:navajowhite;
+}
+
+.biodata{
+	margin-left:3%;
+}
+
+.biodata img{
+	transition: transform .3s;
+}
+
+.biodata img:hover{
+	transform: scale(1.3);
+	cursor: pointer;
+}
+
+.contact img{
+	width:8%;
+}
+
+.contact img:hover{
+	opacity:0.5;
+}
+
+.contact span{
+	margin-left:5px;
+}
+
+.second_version img{
+	width:25%;
+}
+
+.mail, .wa{
+	margin-right:10px;
+}
+
+@media screen and (max-width:769px){
+	.logo{
+		width:50%;
+		height: 50%;
+	}
+	
+	.credit img{
+		width:60%;
+	}
+	
+	.story{
+		margin-right:7%;
+	}
+	
+	.rounded-circle .profile{
+		width:40%;
+	}
+	
+	.biodata{
+		text-align: center;
+		margin-left:0;
+	}
+	
+	.first_version{
+		display:none;
+	}
+}
+
+@media screen and (min-width:770px){
+	.second_version{
+		display:none;
+	}
+}
+
+@media screen and (max-width:560px){
+	.second_version img{
+		width:35%;
+	}
+}
