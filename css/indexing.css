@@ -1,11 +1,28 @@
 body{
 	background-color:beige;
-	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";	
+	font-weight: 900;
+	font-size:18px;
 }
+
+
+div.bg-scroll{
+	background-color:rgba(0, 0, 0, 0);
+	color: rgba(0, 0, 0, 1);
+}
+
 
 a{
 	color: red;
 	font-size: 20px;
+}
+
+.summary{
+	margin-top:-20px;
+}
+
+nav .active{
+	color:blue;
 }
 
 .scrolltop-button{
@@ -111,6 +128,7 @@ hr{
 	}
 	
 	.summary{
+		margin-top:0;
 		right: 20%;
 		left: 20%;
 	}

@@ -1,11 +1,22 @@
 body{
 	background-color:beige;
 	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	font-weight: 900;
+	font-size:18px;
 }
 
 a{
-	color: red;
+	color:red;
 	font-size:20px;
+}
+
+nav .active{
+	color:blue;
+}
+
+div.bg-scroll{
+	background-color: rgba(0, 0, 0, 0);
+	color:black;
 }
 
 .scrolltop-button{
