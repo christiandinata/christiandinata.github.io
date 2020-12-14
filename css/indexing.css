@@ -112,10 +112,8 @@ hr{
 
 @media screen and (max-width:769px){
 	.logo{
-		margin-top: 80px;
-		margin-bottom:20px;
-		width:300px;
-		height: 300px;
+		width:45%;
+		height: 45%;
 	}
 
 	.credit img{
