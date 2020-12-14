@@ -11,7 +11,27 @@ a{
 }
 
 nav .active{
-	color:blue;
+	text-decoration: none;
+	color:white;
+	background-color:red;
+	padding: 5px 10px;
+	border-radius: 100px/50px;
+}
+
+nav a, div.index, div.blog{
+	transition: transform 0.3s;
+}
+
+nav a:hover{
+	text-decoration: none;
+	color:white;
+	background-color:red;
+	padding: 5px 10px;
+	border-radius: 100px/50px;
+}
+
+div.index:hover, div.blog:hover{
+	transform: scale(1.1);
 }
 
 div.bg-scroll{
@@ -125,8 +145,10 @@ span.read_less_button:hover{
 
 @media screen and (max-width:769px){
 	.logo{
-		width:50%;
-		height: 50%;
+		margin-top: 80px;
+		margin-bottom:20px;
+		width:300px;
+		height: 300px;
 	}
 	
 	.credit img{
