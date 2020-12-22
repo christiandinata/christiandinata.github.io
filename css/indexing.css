@@ -147,7 +147,7 @@ hr{
 }
 
 .bio{
-	width:85%;
+	width:90%;
 	margin-left:auto;
 	margin-right:auto;
 	margin-top:100px;
@@ -214,7 +214,7 @@ button:focus {outline:0;}
 
 .experiences{
 	color: #c5c6c7;
-	width:85%;
+	width:90%;
 	margin-left:auto;
 	margin-right:auto;
 	margin-top:70px;
@@ -258,7 +258,7 @@ button:focus {outline:0;}
 
 .accomplishments{
 	color: #c5c6c7;
-	width:85%;
+	width:90%;
 	margin-left:auto;
 	margin-right:auto;
 	margin-top:70px;
@@ -296,7 +296,7 @@ button:focus {outline:0;}
 
 .skills{
 	color: #c5c6c7;
-	width:85%;
+	width:90%;
 	margin-left:auto;
 	margin-right:auto;
 	margin-top:70px;
@@ -347,7 +347,7 @@ button:focus {outline:0;}
 	filter: invert(100%);
 }
 
-.credit .brand{
+.credit, .credit .brand{
 	display:inline-flex;
 }
 
