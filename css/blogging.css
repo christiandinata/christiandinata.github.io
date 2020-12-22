@@ -1,42 +1,112 @@
+html{
+	word-wrap:break-word;
+}
+
+a:hover{
+	text-decoration:none;
+}
+
 body{
 	background-color:beige;
-	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
-	font-weight: 900;
+	font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-weight: 600;
 	font-size:18px;
 }
 
+header{
+	color: white;
+	width: 100%;
+	position:absolute;
+}
+
+.brand{
+	border: 4px solid hotpink;
+	padding: 5px 10px;
+	color: #fccd04;
+	font-family: "fjalla one";
+	font-size: calc(70% + 1vw + 1vh);
+	/*background: -webkit-linear-gradient(left, #faf200, #b21f1f, #fdbb2d);*/
+	background: -webkit-linear-gradient(left,#e1eec3, #f05053);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.navigation a:hover, .credit a:hover{
+	text-decoration:none;
+}
+
+.logo-container{
+	width:100%;
+	height: 100vh;
+	background-image:url(../images/header_bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.logo-container h3{
+	color: white;
+	text-align: center;
+}
+
+.opening1{
+	font-size:calc(70% + 1vw + 1vh);
+}
+
+.opening1 .letter2 {
+	display: inline;
+	line-height: 1em;
+}
+
+.opening img{
+	animation: bounce 1s infinite alternate;
+	-webkit-animation: bounce 0.5s infinite alternate;
+	-webkit-filter: invert(100%);
+}
+
+.opening img:hover{
+	cursor:pointer;
+}
+
+@keyframes bounce {
+	from {
+		transform: translateY(0px);
+	}
+	to {
+		transform: translateY(-15px);
+	}
+}
+
+@-webkit-keyframes bounce {
+	from {
+		transform: translateY(0px);
+	}
+	to {
+		transform: translateY(-15px);
+	}
+}
+
 a{
-	color:red;
-	font-size:20px;
+	color: white;
+	font-size: 20px;
+	transition-duration: 0.6s;
 }
 
-nav .active{
-	text-decoration: none;
-	color:white;
-	background-color:red;
-	padding: 5px 10px;
-	border-radius: 100px/50px;
+
+.links a:hover{
+	text-decoration:none;
+	color:darkgoldenrod;
+	background-color:white;
+	padding:5px 10px;
+	border-radius:20px;
 }
 
-nav a, div.index, div.blog{
-	transition: transform 0.3s;
+.links .active{
+	color:darkgoldenrod;
 }
 
-nav a:hover{
-	text-decoration: none;
-	color:white;
-	background-color:red;
-	padding: 5px 10px;
-	border-radius: 100px/50px;
-}
-
-div.index:hover, div.blog:hover{
-	transform: scale(1.1);
-}
-
-div.bg-scroll{
-	background-color: rgba(0, 0, 0, 0);
-	color:black;
+.wrapper{
+	background-image:linear-gradient(#0b0c10, #000944, #0b0c10);
+	color: #c5c6c7;
 }
 
 .scrolltop-button{
@@ -45,6 +115,8 @@ div.bg-scroll{
 	bottom:15px;
 	transition-duration: 0.4s;
 	z-index:1;
+	-webkit-filter:invert(100%);
+	filter:invert(100%);
 }
 
 .scrolltop-button:hover{
@@ -53,7 +125,7 @@ div.bg-scroll{
 }
 
 h1{
-	font-weight: 900;
+	font-weight: 700;
 }
 
 .d-flex{
@@ -70,7 +142,7 @@ h2.solid{
 }
 
 table, th, td {
-  	border: 1px solid black;
+  	border: 1px solid #c5c6c7;
 	border-collapse: collapse;
 }
 
@@ -116,11 +188,33 @@ span.read_less_button:hover{
 
 .biodata img{
 	transition: transform .3s;
+	margin-top:-45%;
+	width:90%;
 }
 
 .biodata img:hover{
 	transform: scale(1.3);
 	cursor: pointer;
+}
+
+.biodata_card{
+	background-color:#1f2833;
+	margin-top:150px;
+	border-radius:20px;
+	-webkit-box-shadow: 3px 0px 50px 2px rgba(31,40,51,1);
+	-moz-box-shadow: 3px 0px 50px 2px rgba(31,40,51,1);
+	box-shadow: 3px 0px 50px 2px rgba(31,40,51,1);
+	position:relative;
+}
+
+.footer{
+	background-color:#0b0c10;
+	color:#c5c6c7;
+	padding-bottom: 30px;
+}
+
+.footer_wrapper{
+	margin-top: 70px;
 }
 
 .contact img{
@@ -131,8 +225,22 @@ span.read_less_button:hover{
 	opacity:0.5;
 }
 
+.github{
+	-webkit-filter:invert(100%);
+	filter: invert(100%);
+}
+
+.credit .brand{
+	display:inline-flex;
+}
+
+
 .contact span{
 	margin-left:5px;
+}
+
+.contact h4{
+	color:#66fcf1;
 }
 
 .second_version img{
@@ -143,7 +251,7 @@ span.read_less_button:hover{
 	margin-right:10px;
 }
 
-@media screen and (max-width:769px){
+@media screen and (max-width:770px){
 	.logo{
 		width: 45%;
 		height: 45%;
@@ -157,13 +265,19 @@ span.read_less_button:hover{
 		margin-right:7%;
 	}
 	
-	.profile{
+	.biodata img{
 		width:40%;
+		margin-top: -22%;
+	}
+
+	.biodata_card{
+		margin-top: 85px
 	}
 	
 	.biodata{
 		text-align: center;
-		margin-left:0;
+		margin-left:20%;
+		margin-right:20%;
 	}
 	
 	.first_version{

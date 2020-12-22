@@ -1,48 +1,118 @@
+
+	/*
+		BG COLORS USED IN THIS WEBSITE
+		#0B0C10 - NEARLY BLACK
+		#1F2833 - DARKER GREY
+		#C5C6C7	- I'D SAY GREY
+		#66FCF1 - CYAN
+		#45A29E - OLDER CYAN
+
+		USEFUL WEBSITE: https://www.cssmatic.com/box-shadow
+	*/
+a:hover{
+	text-decoration:none;
+}
+
 body{
-	background-color:beige;
-	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";	
-	font-weight: 900;
+	/*font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";	*/
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-weight: 600;
 	font-size:18px;
 }
 
+header{
+	color: white;
+	width: 100%;
+	position:absolute;
+}
 
-div.bg-scroll{
-	background-color:rgba(0, 0, 0, 0);
-	color: rgba(0, 0, 0, 1);
+.brand{
+	border: 4px solid hotpink;
+	padding: 5px 10px;
+	color: #fccd04;
+	font-family: "fjalla one";
+	font-size: calc(70% + 1vw + 1vh);
+	/*background: -webkit-linear-gradient(left, #faf200, #b21f1f, #fdbb2d);*/
+	background: -webkit-linear-gradient(left,#e1eec3, #f05053);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.navigation a:hover, .credit a:hover{
+	text-decoration:none;
+}
+
+.logo-container{
+	width:100%;
+	height: 100vh;
+	background-image:url(../images/header_bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.logo-container h3{
+	color: white;
+	text-align: center;
+}
+
+.opening1{
+	font-size:calc(70% + 1vw + 1vh);
+}
+
+.opening1 .letter2 {
+	display: inline;
+	line-height: 1em;
+}
+
+.opening img{
+	animation: bounce 1s infinite alternate;
+	-webkit-animation: bounce 0.5s infinite alternate;
+	-webkit-filter: invert(100%);
+}
+
+.opening img:hover{
+	cursor:pointer;
+}
+
+@keyframes bounce {
+	from {
+		transform: translateY(0px);
+	}
+	to {
+		transform: translateY(-15px);
+	}
+}
+
+@-webkit-keyframes bounce {
+	from {
+		transform: translateY(0px);
+	}
+	to {
+		transform: translateY(-15px);
+	}
+}
+
+a{
+	color: white;
+	font-size: 20px;
+	transition-duration: 0.6s;
 }
 
 
-a{
-	color: red;
-	font-size: 20px;
+.links a:hover{
+	text-decoration:none;
+	color:darkgoldenrod;
+	background-color:white;
+	padding:5px 10px;
+	border-radius:20px;
+}
+
+.links .active{
+	color:darkgoldenrod;
 }
 
 .summary{
 	margin-top:-20px;
-}
-
-nav .active{
-	text-decoration: none;
-	color:white;
-	background-color:red;
-	padding: 5px 10px;
-	border-radius: 100px/50px;
-}
-
-nav a, div.index, div.blog{
-	transition: transform 0.3s;
-}
-
-nav a:hover{
-	text-decoration: none;
-	color:white;
-	background-color:red;
-	padding: 5px 10px;
-	border-radius: 100px/50px;
-}
-
-div.index:hover, div.blog:hover{
-	transform: scale(1.1);
 }
 
 .scrolltop-button{
@@ -51,6 +121,7 @@ div.index:hover, div.blog:hover{
 	bottom:15px;
 	transition-duration: 0.4s;
 	z-index:1;
+	-webkit-filter:invert(100%);
 }
 
 .scrolltop-button:hover{
@@ -59,7 +130,7 @@ div.index:hover, div.blog:hover{
 }
 
 h1{
-	font-weight: 900;
+	font-weight: 700;
 }
 
 hr{
@@ -71,8 +142,29 @@ hr{
 	width: 45%;
 }
 
+.wrapper{
+	background-image:linear-gradient(#0b0c10, #000944, #0b0c10);
+}
+
+.bio{
+	width:85%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:100px;
+	background-color: #1f2833;
+	border-radius:20px;
+	color: #66fcf1;
+	-webkit-box-shadow: 3px 0px 50px 2px rgba(31,40,51,1);
+	-moz-box-shadow: 3px 0px 50px 2px rgba(31,40,51,1);
+	box-shadow: 3px 0px 50px 2px rgba(31,40,51,1);
+}
+
 .bio img{
 	transition: transform .3s;
+	width: 250px;
+	height: 250px;
+	margin-top:-80px;
+
 }
 
 .bio img:hover{
@@ -80,14 +172,167 @@ hr{
 	transform: scale(1.5);
 }
 
+.bio .intro{
+	margin-right:20%;
+	color:#c5c6c7;
+}
+
+.bio h4{
+	font-size:1.5rem;
+}
+
+.intro h3{
+	font-weight: 700;
+}
+
+.season1, .season2, .season3, .season4{
+	color:#45a293;
+	font-size:1.5rem;
+}
+
+.season1 .letter {
+	display: inline-block;
+	line-height: 1em;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: hotpink;
+}
+
+button:focus {outline:0;}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    background: antiquewhite;
+    display: block;
+	-webkit-backface-visibility: visible;
+	transition-duration: 0.5s;
+	border-radius: 30px;
+}
+
+.experiences{
+	color: #c5c6c7;
+	width:85%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:70px;
+	background-color:  #1f2833;
+	border-radius:20px;
+	-webkit-box-shadow: 3px 0px 50px 2px rgba(31,40,51,1);
+	-moz-box-shadow: 3px 0px 50px 2px rgba(31,40,51,1);
+	box-shadow: 3px 0px 50px 2px rgba(31,40,51,1);
+}
+
+.experiences h2{
+	color:#66fcf1;
+}
+
+.experiences h3{
+	font-weight: 700;
+}
+
+.experiences a{
+	color:crimson;
+	text-decoration:none;
+}
+
+.experiences a:hover{
+	text-decoration:none;
+	color:darkcyan;
+}
+
+.yr_exp{
+	background-color:saddlebrown;
+	padding: 5px 10px;
+	border-radius:20px;
+	color: navajowhite;
+	width: fit-content;
+}
+
+.season2 .letter1 {
+	display: inline-block;
+	line-height: 1em;
+}
+
 .accomplishments{
-	margin-left:5%;
+	color: #c5c6c7;
+	width:85%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:70px;
+	background-color: #1f2833;
+	border-radius:20px;
+	-webkit-box-shadow: 3px 0px 50px 2px rgba(31,40,51,1);
+	-moz-box-shadow: 3px 0px 50px 2px rgba(31,40,51,1);
+	box-shadow: 3px 0px 50px 2px rgba(31,40,51,1);
+}
+
+.accomplishments h2{
+	color:#66fcf1;
 }
 
 .yr_acm{
-	border-left: 5px solid red;
+	background-color: #0b0c10;
+	padding:5px 10px;
+	border-radius: 10px;
+	color: #66fcf1;
+	margin-right:5px;
 }
 
+.cmpny_acm{
+	background-color: #66fcf1;
+	padding:5px 10px;
+	border-radius: 10px;
+	color: #0b0c10;
+	margin-right:5px;
+}
+
+.season3 .letter2 {
+	display: inline-block;
+	line-height: 1em;
+}
+
+.skills{
+	color: #c5c6c7;
+	width:85%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:70px;
+	background-color: #1f2833;
+	border-radius:20px;
+	-webkit-box-shadow: 3px 0px 50px 2px rgba(31,40,51,1);
+	-moz-box-shadow: 3px 0px 50px 2px rgba(31,40,51,1);
+	box-shadow: 3px 0px 50px 2px rgba(31,40,51,1);
+}
+
+.skills img{
+	margin-right:10px;
+}
+
+.skills mark{
+	font-size:0.7rem;
+}
+
+.skills h2{
+	color:#66fcf1;
+}
+
+.season4 .letter3 {
+	display: inline-block;
+	line-height: 1em;
+}
+
+.footer{
+	background-color:#0b0c10;
+	color:#c5c6c7;
+	padding-bottom: 30px;
+}
+
+.footer_wrapper{
+	margin-top: 40px;
+}
 
 .contact img{
 	width:8%;
@@ -97,9 +342,21 @@ hr{
 	opacity: 0.5;
 }
 
+.github{
+	-webkit-filter:invert(100%);
+	filter: invert(100%);
+}
+
+.credit .brand{
+	display:inline-flex;
+}
 
 .contact span{
 	margin-left:5px;
+}
+
+.contact h4{
+	color:#66fcf1;
 }
 
 .second_version img{
@@ -111,13 +368,23 @@ hr{
 }
 
 @media screen and (max-width:769px){
-	.logo{
+	/*.logo{
 		width:45%;
 		height: 45%;
+	}*/
+
+	.bio img{
+		width:200px;
+		height:200px;
 	}
 
-	.credit img{
-		width:60%;
+	.bio .credentials{
+		margin-top:20px;
+		text-align:center;
+	}
+
+	.bio .intro{
+		margin-right:0;
 	}
 	
 	.contact span{
@@ -143,10 +410,6 @@ hr{
 }
 
 @media screen and (max-width:993px){
-	.rounded-circle{
-		width: 35%;
-	}
-	
 	.summary{
 		margin-top:0;
 		left: 15%;
